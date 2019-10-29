@@ -215,7 +215,7 @@ section {
   header {
     min-width: 50%;
   }
-  &.green {
+  &#about {
     background: $green;
     header {
       padding: 30px;
@@ -243,7 +243,6 @@ form {
   label {
     color: $white;
     display: block;
-    flex-basis: 30%;
     font-size: 1.3em;
     line-height: 1.6em;
     flex-basis: 100%;
@@ -329,7 +328,7 @@ form {
   }
 }
 
-section.projects {
+section#projects {
   display: flex;
   flex-wrap: wrap;
 
