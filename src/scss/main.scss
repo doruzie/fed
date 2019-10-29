@@ -1,0 +1,420 @@
+@import "variables";
+@import "mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sofia-pro, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1em;
+  color: $blue;
+  box-sizing: border-box;
+}
+
+body {
+  padding-left: 260px;
+}
+
+
+main {
+  transition: all .3s ease;
+  position: relative;
+  &:before {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background: $green;
+    z-index: 1;
+    transition: all .3s ease;
+  }
+  &:after {
+    content: '';
+    position: fixed;
+    left: 0;
+    animation-delay: .3s;
+    animation: overlay .6s forwards;
+    width: 100%;
+    height: 100%;
+    background: $green;
+    z-index: 1;
+    transition: all .6s ease;
+  }
+  &.close {
+    &:before {
+      top: 0;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-weight: 500;
+  margin: 0 0 25px 0;
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+h1 {
+  font-size: 4.3em;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-size: 2.9em;
+  line-height: 1.2em;
+}
+
+h3 {
+  font-size: 2.2em;
+  line-height: 1.2em;
+}
+
+h4 {
+  font-size: 1.6em;
+  line-height: 1.2em;
+}
+
+p {
+  font-size: 1.3em;
+  line-height: 1.2em;
+}
+
+nav {
+  width: 100%;
+  max-width: 200px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  .brand {
+    flex-basis: 100%;
+
+    svg {
+      g {
+        fill: $blue;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0 0 0;
+
+    li {
+      padding: 5px 0;
+
+      a {
+        text-decoration: none;
+        color: $blue;
+        font-size: 1.3em;
+        font-weight: 600;
+        &.active {
+          position: relative;
+          &:after {
+            content: '';
+            //left: 25px;
+            width: calc(100% + 25px);
+            height: 3px;
+            top: 18px;
+            background: $blue;
+            position: absolute;
+            animation: nav .5s forwards;
+            animation-delay: .4s;
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.top {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px 30px 30px 0;
+  position: relative;
+
+  article {
+    max-width: 1160px;
+
+    h1 {
+      position: relative;
+      margin: 0 0 40px 0;
+      display: block;
+      flex-basis: 100%;
+      animation: animated .5s forwards;
+      animation-delay: 1.5s;
+      opacity: 0;
+
+      &:after {
+        content: '';
+        width: 40px;
+        height: 5px;
+        background: $green;
+        position: absolute;
+        left: 0;
+        bottom: -15px;
+      }
+    }
+
+    h4 {
+      margin: 0;
+      opacity: 0;
+      position: relative;
+      animation: animated .5s forwards;
+      animation-delay: 1s;
+    }
+
+    h1, h2, h3, h4 {
+
+      a, span {
+        color: $green;
+        text-decoration: none;
+      }
+    }
+
+    > a {
+      position: absolute;
+      bottom: -80px;
+      width: 80px;
+      height: 80px;
+      background: $green;
+      border-radius: 0 50% 0 0;
+      animation: scrolllink .5s forwards;
+      animation-delay: 2s;
+
+      svg {
+        @include center_total();
+        fill: $blue;
+      }
+    }
+  }
+}
+
+section {
+  display: flex;
+  align-items: center;
+  //flex-wrap: wrap;
+  header {
+    min-width: 50%;
+  }
+  &.green {
+    background: $green;
+    header {
+      padding: 30px;
+    }
+
+    article {
+      form {
+        padding: 30px;
+        background: $blue;
+      }
+    }
+  }
+  figure {
+    img, svg {
+      float: left;
+    }
+  }
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  label {
+    color: $white;
+    display: block;
+    flex-basis: 30%;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    flex-basis: 100%;
+
+    label {
+      font-size: 1em;
+      line-height: 1em;
+      width: 50%;
+    }
+  }
+
+  label:nth-last-of-type(1) {
+    flex-basis: 100%;
+  }
+
+  input[type='radio'] {
+    -webkit-appearance: none;
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid $white;
+    position: relative;
+    margin: 7px 7px 0 0;
+    transition: all .3s ease;
+
+    &:after {
+      transition: all .3s ease;
+    }
+
+    &:checked {
+      border: 2px solid $green;
+
+      &:after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: $green;
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  input[type='text'] {
+    -webkit-appearance: none;
+    border: none;
+    color: $blue;
+    width: 100%;
+    height: 60px;
+    border-bottom: 3px solid $white;
+  }
+
+  textarea {
+    -webkit-appearance: none;
+    border: none;
+    color: $white;
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border-bottom: 3px solid $white;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+section.projects {
+  display: flex;
+  flex-wrap: wrap;
+
+  article {
+    width: 50%;
+    a {
+      width: 100%;
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+
+      figure {
+        width: 100%;
+        max-width: 300px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  article:first-child {
+    background: #BAEAE1;
+  }
+  article:nth-child(2) {
+    background: #b49fa0;
+  }
+  article:nth-child(3) {
+    //background: #ecf0f1;
+    background: $white;
+  }
+  article:nth-child(4) {
+    background: #1ab560;
+  }
+}
+
+@keyframes animated {
+  0% {
+    top: -30px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+
+@keyframes nav {
+  0% {
+    left: -50px;
+    opacity: 0;
+  }
+  90% {
+    left: -20px;
+    opacity: 1;
+  }
+  100% {
+    left: -25px;
+    opacity: 1;
+  }
+}
+
+
+@keyframes scrolllink {
+  0% {
+    bottom: -80px;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+
+
+
+@keyframes overlay {
+  0% {
+    bottom: 0
+  }
+  100% {
+    bottom: -100%;
+  }
+}
