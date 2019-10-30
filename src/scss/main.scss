@@ -141,6 +141,7 @@ nav {
         color: $blue;
         font-size: 1.3em;
         font-weight: 600;
+        transition: all .3s ease;
 
         &.active {
           position: relative;
@@ -157,6 +158,9 @@ nav {
             animation-delay: .4s;
             opacity: 0;
           }
+        }
+        &:hover {
+          color: $green;
         }
       }
     }
@@ -263,6 +267,12 @@ section.top {
       svg {
         @include center_total();
         fill: $blue;
+        transition: all .3s ease;
+      }
+      &:hover {
+        svg {
+          margin-top: 3px;
+        }
       }
     }
   }
