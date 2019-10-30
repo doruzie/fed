@@ -120,10 +120,17 @@ nav {
 
   .brand {
     flex-basis: 100%;
-
     svg {
       g {
+        transition: all .3s ease;
         fill: $blue;
+      }
+    }
+    &:hover {
+      svg {
+        g {
+          fill: $green;
+        }
       }
     }
   }
@@ -435,6 +442,9 @@ form {
     border: 2px solid $blue;
     border-radius: 3px;
     background: none;
+    &:focus {
+      border: 2px solid $green;
+    }
   }
 
   textarea {
@@ -446,6 +456,9 @@ form {
     background: none;
     border: 2px solid $blue;
     border-radius: 3px;
+    &:focus {
+      border: 2px solid $green;
+    }
   }
 
   input[type='submit'] {
@@ -459,10 +472,11 @@ form {
     line-height: 1.6em;
     margin: 10px;
     font-weight: 600;
-
-    svg {
-      @include center_total();
-      fill: $blue;
+    transition: all .3s ease;
+    cursor: pointer;
+    &:hover {
+     background: $blue;
+      color: $white;
     }
   }
 }
