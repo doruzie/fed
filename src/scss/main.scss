@@ -1,6 +1,9 @@
+//External file includes
 @import "variables";
 @import "mixins";
 
+
+//General styles
 * {
   padding: 0;
   margin: 0;
@@ -21,11 +24,11 @@ body {
   }
 }
 
-
 main {
   transition: all .3s ease;
   position: relative;
 
+  //Page anmiation styling
   &:before {
     content: '';
     position: fixed;
@@ -58,10 +61,13 @@ main {
   }
 }
 
+
+//Prevent image overflow
 img {
   max-width: 100%;
 }
 
+//Font styling
 h1, h2, h3, h4, h5, p {
   font-weight: 500;
   margin: 0 0 25px 0;
@@ -104,6 +110,8 @@ p {
   font-size: 1.3em;
   line-height: 1.2em;
 }
+
+//Navigation
 
 nav {
   width: 100%;
@@ -213,7 +221,44 @@ nav {
   }
 }
 
-section.top {
+//General section
+
+section {
+  display: flex;
+  align-items: center;
+
+  header {
+    min-width: 50%;
+  }
+
+  &#about, &.green {
+    background: $green;
+
+    header {
+      padding: 30px;
+    }
+  }
+
+  figure {
+    img, svg {
+      float: left;
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+    display: block;
+    header {
+      min-width: 100%;
+    }
+    article {
+
+    }
+  }
+}
+
+
+//Header section
+
+main section:first-child {
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -285,40 +330,57 @@ section.top {
   }
   @media (max-width: $breakpoint-mobile) {
     padding: 30px;
+
   }
 }
 
-section {
+//Projects section
+
+section#projects {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
 
-  header {
-    min-width: 50%;
-  }
+  article {
+    width: 50%;
 
-  &#about, &.green {
-    background: $green;
-
-    header {
+    a {
+      width: 100%;
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 30px;
+
+      figure {
+        width: 100%;
+        max-width: 300px;
+
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 
-  figure {
-    img, svg {
-      float: left;
-    }
+  article:first-child {
+    background: #BAEAE1;
   }
-  @media (max-width: $breakpoint-mobile) {
-    display: block;
-    header {
-      min-width: 100%;
-    }
-    article {
 
-    }
+  article:nth-child(2) {
+    background: #b49fa0;
+  }
+
+  article:nth-child(3) {
+    //background: #ecf0f1;
+    background: $white;
+  }
+
+  article:nth-child(4) {
+    background: #1ab560;
   }
 }
+
+//Form styling
 
 form {
   width: 100%;
@@ -481,68 +543,8 @@ form {
   }
 }
 
-@keyframes typing {
-  from {
-    width: 0
-  }
-  to {
-    width: 100%
-  }
-}
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent
-  }
-  50% {
-    border-color: orange;
-  }
-}
-
-section#projects {
-  display: flex;
-  flex-wrap: wrap;
-
-  article {
-    width: 50%;
-
-    a {
-      width: 100%;
-      min-height: 50vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 30px;
-
-      figure {
-        width: 100%;
-        max-width: 300px;
-
-        img {
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  article:first-child {
-    background: #BAEAE1;
-  }
-
-  article:nth-child(2) {
-    background: #b49fa0;
-  }
-
-  article:nth-child(3) {
-    //background: #ecf0f1;
-    background: $white;
-  }
-
-  article:nth-child(4) {
-    background: #1ab560;
-  }
-}
+//Animation keyframes
 
 @keyframes animated {
   0% {
