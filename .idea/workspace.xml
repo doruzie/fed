@@ -39,11 +39,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="235" column="12" selection-start-line="235" selection-start-column="12" selection-end-line="235" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="41" column="81" lean-forward="true" selection-start-line="41" selection-start-column="81" selection-end-line="41" selection-end-column="81" />
+            <state relative-caret-position="185">
+              <caret line="37" column="17" lean-forward="true" selection-end-line="74" selection-end-column="7" />
               <folding>
                 <element signature="n#style#0;n#svg#0;n#a#0;n#article#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -53,14 +62,9 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thanksyou.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="233" column="3" selection-start-line="233" selection-start-column="3" selection-end-line="233" selection-end-column="3" />
+            <state relative-caret-position="562">
+              <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -77,13 +81,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            <state relative-caret-position="45">
+              <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -104,9 +108,13 @@
       <find>typed</find>
       <find>h4</find>
       <find>nav</find>
-      <find>section</find>
       <find>.prej</find>
       <find>green</find>
+      <find>top</find>
+      <find>&gt; a</find>
+      <find>section</find>
+      <find>.green</find>
+      <find>form</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,14 +134,15 @@
         <option value="/private/var/folders/xs/_nptgmjj4qd89z_4n6tl259c0000gn/T/97f16f39-458b-42e5-b989-7a234ec21b31/srv/users/serverpilot/apps/kermismidwoud/public/wp-config.php" />
         <option value="/private/var/folders/xs/_nptgmjj4qd89z_4n6tl259c0000gn/T/97f16f39-458b-42e5-b989-7a234ec21b31/srv/users/serverpilot/apps/aussiemetliessie/public/phpMyAdmin-64554643/config.inc.php" />
         <option value="/private/var/folders/xs/_nptgmjj4qd89z_4n6tl259c0000gn/T/97f16f39-458b-42e5-b989-7a234ec21b31/srv/users/serverpilot/apps/aussiemetliessie/public/wp-config.php" />
-        <option value="$PROJECT_DIR$/src/scss/variables.scss" />
         <option value="$PROJECT_DIR$/src/scss/mixins.scss" />
         <option value="$PROJECT_DIR$/src/js/scripts.js" />
-        <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/projects.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/scss/main.scss" />
         <option value="$PROJECT_DIR$/dist/js/main.js" />
+        <option value="$PROJECT_DIR$/contact.html" />
+        <option value="$PROJECT_DIR$/src/scss/variables.scss" />
+        <option value="$PROJECT_DIR$/thanksyou.html" />
+        <option value="$PROJECT_DIR$/src/scss/main.scss" />
       </list>
     </option>
   </component>
@@ -225,12 +234,12 @@
       <workItem from="1571222442096" duration="142000" />
       <workItem from="1571234774523" duration="47000" />
       <workItem from="1572336491162" duration="5454000" />
-      <workItem from="1572362538028" duration="11326000" />
+      <workItem from="1572362538028" duration="13277000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23008000" />
+    <option name="totallyTimeSpent" value="24959000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -296,24 +305,10 @@
     <entry file="file://$PROJECT_DIR$/src/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="233" column="3" selection-start-line="233" selection-start-column="3" selection-end-line="233" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -337,10 +332,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="41" column="81" lean-forward="true" selection-start-line="41" selection-start-column="81" selection-end-line="41" selection-end-column="81" />
+        <state relative-caret-position="185">
+          <caret line="37" column="17" lean-forward="true" selection-end-line="74" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#svg#0;n#a#0;n#article#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -348,12 +357,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thanksyou.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="562">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="235" column="12" selection-start-line="235" selection-start-column="12" selection-end-line="235" selection-end-column="12" />
         </state>
       </provider>
     </entry>
