@@ -1,6 +1,17 @@
 const $ = jQuery;
 $(document).ready(function(){
 
+    // Toggle popup
+    $("section#projects article:nth-child(3) a").click(function(){
+        event.preventDefault();
+        $(".popup").addClass("open");
+    });
+
+    $("section.popup a").click(function(){
+        event.preventDefault();
+        $(".popup").removeClass("open");
+    });
+
     // Page animation script - Dorus Bos
     $("nav a").click(function (e) {
         e.preventDefault();

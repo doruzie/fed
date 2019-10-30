@@ -80,6 +80,7 @@ h1, h2, h3, h4, h5, p {
 h1 {
   font-size: 4.3em;
   line-height: 1.2em;
+  letter-spacing: -1px;
   @media (max-width: $breakpoint-mobile) {
     font-size: 2.8em;
   }
@@ -242,6 +243,8 @@ section {
   figure {
     img, svg {
       float: left;
+        //-webkit-filter: grayscale(100%);
+        //filter: grayscale(100%);
     }
   }
   @media (max-width: $breakpoint-mobile) {
@@ -380,6 +383,30 @@ section#projects {
   }
 }
 
+section.popup {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  background: rgba(0,0,0,0.8);
+  transform: scale(.5);
+  transition: all .6s ease;
+  display: flex;
+  a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    background: $green;
+    text-decoration: none;
+  }
+  &.open {
+    bottom: 0;
+    transform: scale(1);
+  }
+}
+
 //Form styling
 
 form {
@@ -514,7 +541,6 @@ form {
     color: $blue;
     padding: 5px 10px;
     width: 100%;
-    height: 150px;
     background: none;
     border: 2px solid $blue;
     border-radius: 3px;
