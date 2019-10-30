@@ -4,7 +4,7 @@ $(document).ready(function(){
     // Page animation script - Dorus Bos
     $("nav a").click(function (e) {
         e.preventDefault();
-        var href = $(this).attr('href');
+        let href = $(this).attr('href');
         $("main").addClass("close");
         setTimeout(function () {
             window.location.href = href;
