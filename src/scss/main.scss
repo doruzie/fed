@@ -17,7 +17,7 @@ body {
     padding-left: 210px;
   }
   @media (max-width: $breakpoint-mobile) {
-    padding-left: 50px;
+    padding-left: 0;
   }
 }
 
@@ -188,7 +188,14 @@ nav {
       li {
         margin: 5px;
         float: left;
-        &.active {}
+        a {
+          &.active {
+            &:after {
+              width: 100%;
+              animation: navmobile .5s forwards;
+            }
+          }
+        }
       }
     }
 
@@ -259,6 +266,9 @@ section.top {
       }
     }
   }
+  @media (max-width: $breakpoint-mobile) {
+    padding: 30px;
+  }
 }
 
 section {
@@ -280,6 +290,15 @@ section {
   figure {
     img, svg {
       float: left;
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+    display: block;
+    header {
+      min-width: 100%;
+    }
+    article {
+
     }
   }
 }
@@ -322,11 +341,17 @@ form {
     flex-basis: 50%;
     clear: left;
     display: inline-block;
+    @media (max-width: $breakpoint-mobile) {
+      flex-basis: 100%;
+    }
   }
 
   label:nth-child(4) {
     flex-basis: 50%;
     display: inline-block;
+    @media (max-width: $breakpoint-mobile) {
+      flex-basis: 100%;
+    }
   }
 
   input[type='radio'] {
@@ -518,6 +543,17 @@ section#projects {
   }
   100% {
     left: -25px;
+    opacity: 1;
+  }
+}
+
+@keyframes navmobile {
+  0% {
+    left: -20px;
+    opacity: 0;
+  }
+  100% {
+    left: 0px;
     opacity: 1;
   }
 }
